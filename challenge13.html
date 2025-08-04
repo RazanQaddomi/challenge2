@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM Challenge 13</title>
+  <style>
+    .highlight {
+      padding: 5px;
+      margin: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="highlight">Box 1</div>
+  <div class="highlight">Box 2</div>
+  <div class="highlight">Box 3</div>
+
+  <script>
+    const elements = document.getElementsByClassName('highlight');
+    for (let el of elements) {
+      el.style.backgroundColor = 'yellow';
+    }
+  </script>
+</body>
+</html>

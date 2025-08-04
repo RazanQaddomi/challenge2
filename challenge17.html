@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM Challenge 17</title>
+</head>
+<body>
+  <div id="parent">
+    <p>First child paragraph</p>
+    <p>Second child paragraph</p>
+  </div>
+
+  <script>
+    const parent = document.getElementById('parent');
+    const firstChild = parent.firstElementChild;
+    console.log(firstChild.textContent);
+  </script>
+</body>
+</html>

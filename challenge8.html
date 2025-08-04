@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Challenge 8</title>
+  <style>
+    .active {
+      background-color: green;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <button id="toggleBtn">Toggle Class</button>
+
+  <script>
+    const button = document.getElementById("toggleBtn");
+    button.addEventListener("click", function() {
+      button.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

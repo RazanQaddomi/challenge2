@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Challenge 2</title>
+</head>
+<body>
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+
+  <script>
+    const elements = document.getElementsByClassName("item");
+    for (let el of elements) {
+      console.log(el.textContent);
+    }
+  </script>
+</body>
+</html>

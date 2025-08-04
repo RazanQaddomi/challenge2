@@ -1,0 +1,20 @@
+<!-- Save as dom_challenge4.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Challenge 4</title>
+</head>
+<body>
+  <div id="box" style="width:100px; height:100px; background-color:gray;"></div>
+
+  <script>
+    function changeBackgroundColor(id) {
+      const element = document.getElementById(id);
+      element.style.backgroundColor = "blue";
+    }
+
+    changeBackgroundColor("box");
+  </script>
+</body>
+</html>

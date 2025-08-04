@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM Challenge 16</title>
+</head>
+<body>
+  <ul id="myList"></ul>
+
+  <script>
+    const items = ['Apple', 'Banana', 'Cherry'];
+    const ul = document.getElementById('myList');
+
+    items.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      ul.appendChild(li);
+    });
+  </script>
+</body>
+</html>

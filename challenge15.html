@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM Challenge 15</title>
+</head>
+<body>
+  <button id="multiEventBtn">Hover or Click Me</button>
+
+  <script>
+    const btn = document.getElementById('multiEventBtn');
+
+    btn.addEventListener('click', () => {
+      alert('Button clicked!');
+    });
+
+    btn.addEventListener('mouseenter', () => {
+      btn.style.backgroundColor = 'lightblue';
+    });
+
+    btn.addEventListener('mouseleave', () => {
+      btn.style.backgroundColor = '';
+    });
+  </script>
+</body>
+</html>
